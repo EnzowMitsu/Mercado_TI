@@ -1,6 +1,4 @@
-# Consultas SQL e análises
-
-## Principais consultas SQL desenvolvidas para análise do mercado de trabalho em TI
+# 🧠 Consultas SQL e análises
 
 ### 1. Qual o salário médio entre todas as vagas? 
 
@@ -10,7 +8,9 @@ SELECT
     ROUND(AVG(salario),2) AS "Media dos salários" 
 FROM Vaga;
 ````
-***1 Entre 77 vagas disponíveis, o salário médio é de R$ 7.998,70.***
+<img src = "../images/1.png">
+
+- ***Entre 77 vagas disponíveis, o salário médio é de R$ 7.998,70.***
 
 ***
 
@@ -24,8 +24,9 @@ FROM Vaga
 ORDER BY salario DESC
 LIMIT 10;
 ````
+<img src ="../images/3.png">
 
-***3 O maior salário oferecido é para a vaga de engenheiro de dados Sênior, com salário de R$ 12.500.***
+- ***O maior salário oferecido é para a vaga de engenheiro de dados Sênior, com salário de R$ 12.500.***
 
 ***
 
@@ -37,7 +38,9 @@ SELECT
     MAX(salario) AS "Maior", MIN(salario) AS "Menor"
 FROM Vaga GROUP BY tipo_contrato;
 ````
-***2 A média salarial para CLT e PJ, é de aproximadamente R$ 8.000, enquanto para estágio possuem média significativamente menor, com cerca de R$ 3.800. O maior salário identificado pertence a uma vaga CLT, enquanto o menor salário está associado a vagas de estágio e CLT.***
+<img src = "../images/2.png">
+
+- ***A média salarial para CLT e PJ, é de aproximadamente R$ 8.000, enquanto para estágio, possuem média significativamente menor, com cerca de R$ 3.800. O maior salário identificado pertence a uma vaga CLT, enquanto o menor salário está associado às vagas de estágio e CLT.***
 
 ***
 
@@ -49,8 +52,9 @@ SELECT
 FROM Vaga 
 WHERE salario > 5000
 ````
+<img src = "../images/4.png">
 
-***4 entre 77 vagas, 60 vagas oferecem salários maiores que R$ 5.000, indicando que a maioria das oportunidades apresenta remuneração acima desse valor.***
+- ***entre 77 vagas, 60 vagas oferecem salários maiores que R$ 5.000, indicando que a maioria das oportunidades apresenta remuneração acima desse valor.***
 
 ***
 
@@ -64,8 +68,9 @@ FROM Vaga
 WHERE tipo_contrato = 'CLT' OR tipo_contrato = 'PJ'
 GROUP BY tipo_contrato;
 ````
+<img src = "../images/5.png">
 
-***5 Foram identificadas que para vagas CLT, possuem 67, enquanto para vagas PJ, existem apenas 7, indicando que as empresas apresentam preferências por contratos no regime CLT.***
+- ***Foram identificadas que para vagas CLT, existem 67 vagas, enquanto para vagas PJ, existem apenas 7, indicando que as empresas apresentam preferências por contratos no regime CLT.***
 
 ***
 
@@ -78,8 +83,9 @@ SELECT
 FROM Vaga 
 GROUP BY nivel_experiencia;
 ````
+<img src = "../images/6.png">
 
-***6 Verifica-se que a maior quantidades de vagas está concentrada em níveis intermediários, enquanto a menor quantidade de vagas está associada a níveis básicos, indicando maior demanda para profissionais com alguma experiência prévia.***
+- ***Verifica-se que a maior quantidades de vagas está concentrada em níveis intermediários, enquanto a menor quantidade de vagas está associada a níveis básicos, indicando maior demanda para profissionais com alguma experiência prévia.***
 
 ***
 
@@ -92,8 +98,9 @@ SELECT
 FROM Vaga 
 GROUP BY nivel_experiencia;
 ````
+<img src = "../images/7.png">
 
-***7 A média salarial cresce de acordo com o nível de experiência, com profissionais com níveis mais avançados apresentando remunerações superiores e uma maior média salarial.***
+- ***A média salarial cresce de acordo com o nível de experiência, com profissionais com níveis mais avançados apresentando remunerações superiores e uma maior média salarial.***
 
 ***
 
@@ -106,8 +113,9 @@ SELECT
 FROM Empresa 
 GROUP BY porte;
 ````
+<img src = "../images/8.png">
 
-***8 Podemos ver que a quantidade de empresas de porte médio e pequeno são iguais, com 17 empresas cada, enquanto as de grande porte, somam 16 registros.***
+- ***Podemos ver que a quantidade de empresas de porte médio e pequeno são iguais, com 17 empresas cada, enquanto as de grande porte, somam 16 registros.***
 
 ***
 
@@ -120,7 +128,9 @@ SELECT CASE
 END AS "Tipo da modalidade", COUNT(*) AS "Quantidade"
 FROM Vaga GROUP BY id_modalidade
 ````
-***9 Observa-se que as modalidades presencial e remoto apresentam quase a mesma quantidade de vagas, indicando que as empresas continuam a adotar as duas modalidades de forma equilibrada.***
+<img src = "../images/9.png">
+
+- ***Observa-se que as modalidades presencial e remotas apresentam quase a mesma quantidade de vagas, indicando que as empresas continuam a adotar as duas modalidades de forma equilibrada.***
 
 ***
 
@@ -135,8 +145,9 @@ GROUP BY h.id_habilidade
 ORDER BY "Quantidade" DESC 
 LIMIT 3;
 ````
+<img src = "../images/10.png">
 
-***10 A habilidade mais requisitada no mercado de TI foi a linguagem Python, seguida por, SQL e Java, evidenciando uma demanda mais forte para as linguagens mais utilizadas no mercado atual.***
+- ***A habilidade mais requisitada no mercado de TI foi a linguagem Python, seguida por SQL e Java, evidenciando uma demanda mais forte para as linguagens mais utilizadas no mercado atual.***
 
 ***
 
@@ -149,8 +160,19 @@ FROM empresa e
 JOIN vaga v ON e.id_empresa = v.id_empresa
 JOIN localizacao l ON l.id_localizacao = v.id_localizacao
 ````
-
-***colocar fotos 19***
+<table>
+	<tr>
+		<td>
+			<img src = "../images/19.png">
+		</td>
+		<td>
+			<img src = "../images/19_2.png">
+		</td>
+		<td>
+			<img src = "../images/19_3.png">
+		</td>
+	</tr>
+</table>
 
 ***
 
@@ -165,8 +187,9 @@ JOIN Localizacao l ON v.id_localizacao = l.id_localizacao
 GROUP BY "Estado" 
 ORDER BY "Quantidade" DESC;
 ````
+<img src = "../images/11.png">
 
-***11 O estado de São Paulo apresentam uma diferença significativa aos demais estados, sendo o estado com a maior quantidade de vagas, o que pode estar relacionado a grande densidade urbana e industrial e forte presença de empresas tecnológicas.***
+- ***O estado de São Paulo apresentam uma diferença significativa aos demais estados, sendo o estado com a maior quantidade de vagas, o que pode estar relacionado a grande densidade urbana e industrial e forte presença de empresas tecnológicas.***
 
 ***
 
@@ -181,8 +204,9 @@ JOIN Funcao f ON v.id_funcao = f.id_funcao
 GROUP BY f.nome_funcao 
 ORDER BY "Média salarial" DESC;
 ````
+<img src = "../images/12.png">
 
-***12 Observamos que as maiores médias salariais são para cargos de engenheiro de software e engenheiro de dados, ultrapassando uma média de R$ 10.000, seguido por Ciêntista de dados, administrador de BD e DevOPS, ultrapassando 
+- ***Observamos que as maiores médias salariais são para cargos de engenheiro de software e engenheiro de dados, ultrapassando uma média de R$ 10.000, seguido por Ciêntista de dados, administrador de BD e DevOPS, ultrapassando 
 R$ 9.000, indicando que áreas com maior complexidade técnicas apresentam salários mais elevados.***
 
 ***
@@ -198,8 +222,9 @@ JOIN Localizacao l ON v.id_localizacao = l.id_localizacao
 GROUP BY l.estado 
 ORDER BY "Média salarial" DESC;
 ````
+<img src = "../images/13.png">
 
-***O estado do Espírito Santo apresenta a maior média salarial, com uma média de R$ 8.714. São Paulo, mesmo sendo o estado com a maior quantidade de vagas, também apresentam a menor média salarial entre os estados registrados, com uma média de R$ 7.828***
+- ***O estado do Espírito Santo apresenta a maior média salarial, com uma média de R$ 8.714. São Paulo, mesmo sendo o estado com a maior quantidade de vagas, também apresentam a menor média salarial entre os estados registrados, com uma média de R$ 7.828***
 
 ***
 
@@ -216,8 +241,7 @@ JOIN Empresa e ON v.id_empresa = e.id_empresa
 GROUP BY e.id_empresa 
 HAVING COUNT(v.id_vaga) > 1;
 ````
-
-***colocar a foto 14 aqui.***
+<img src = "../images/14.png">
 
 ***
 
@@ -237,7 +261,22 @@ GROUP BY 1,2,3
 ORDER BY "Empresa", "Modalidade" DESC;
 ````
 
-***olocar fotos 15 aqui.***
+<table width = "120">
+	<tr>
+		<td>
+			<img src = "../images/15.png">
+		</td>
+	<tr>
+		<td>
+			<img src = "../images/15_2.png">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src = "../images/15_3.png">
+		</td>
+	</tr>
+</table>
 
 ***
 
@@ -255,8 +294,25 @@ JOIN Habilidade h ON vh.id_habilidade = h.id_habilidade
 GROUP BY 1,2 
 ORDER BY "Função", COUNT(h.nome_habilidade) DESC;
 ````
+<table>
+	<tr>
+		<td>
+			<img src = "../images/17.png">
+		</td>
+	<tr>
+		<td>
+			<img src = "../images/17_2.png">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src = "../images/17_3.png">
+		</td>
+	</tr>
+</table>
 
-***17 Cargos para engenheiro de dados, engenheiro de software e cientistas de dados exigem uma quantidade maior de habilidades técnicas quando comparadas a outros cargos, que exigem uma menor quantidade de competências.***
+
+- ***Cargos para engenheiro de dados, engenheiro de software e cientistas de dados exigem uma quantidade maior de habilidades técnicas quando comparadas a outros cargos, que exigem uma menor quantidade de competências.***
 
 ***
 
@@ -273,8 +329,24 @@ JOIN Funcao f ON v.id_funcao = f.id_funcao
 GROUP BY 1,2 
 ORDER BY "Função", "Maior" DESC;
 ````
+<table>
+	<tr>
+		<td>
+			<img src = "../images/16.png">
+		</td>
+	<tr>
+		<td>
+			<img src = "../images/16_2.png">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img src = "../images/16_3.png">
+		</td>
+	</tr>
+</table>
 
-***16 Podemos ver que nas empresas que oferecem cargos de engenheiro de dados, engenheiro de software e cientista de dados, apresentam uma remuneração maior. Isso confirma que cargos em que exigem uma quantidade maior de habilidades técnicas, possuem uma média salarial superior.***
+- ***Podemos ver que as empresas que oferecem cargos de engenheiro de dados, engenheiro de software e cientista de dados, apresentam uma remuneração maior. Isso confirma que cargos em que exigem uma quantidade maior de habilidades técnicas, possuem uma média salarial superior.***
 
 *** 
 
@@ -290,5 +362,4 @@ GROUP BY 1
 ORDER BY "Média" DESC
 LIMIT 5;
 ````
-
-***colocar foto 18***
+<img src = "../images/18.png">
