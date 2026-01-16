@@ -1,0 +1,78 @@
+id_vaga,titulo_vaga,id_empresa,id_funcao,id_localizacao,id_modalidade,nivel_experiencia,tipo_contrato,salario,data_postagem
+1,Analista de Dados Jr,1,1,1,1,Básico,CLT,3500.00,2025-09-01
+2,Cientista de Dados Pl,2,2,2,2,Intermediário,CLT,7000.00,2025-09-02
+3,Engenheiro de Dados Sr,3,3,3,1,Avançado,CLT,12000.00,2025-09-03
+4,Desenvolvedor Backend Jr,4,4,4,2,Básico,CLT,4000.00,2025-09-04
+5,Desenvolvedor Frontend Pl,5,5,5,1,Intermediário,CLT,6000.00,2025-09-05
+6,Desenvolvedor Full Stack Sr,6,6,6,2,Avançado,CLT,11000.00,2025-09-06
+7,Engenheiro de Software Pl,7,7,7,1,Intermediário,CLT,8000.00,2025-09-07
+8,Administrador de Banco de Dados Sr,8,8,8,2,Avançado,CLT,10000.00,2025-09-08
+9,DevOps Pl,9,9,9,1,Intermediário,CLT,9000.00,2025-09-09
+10,UX/UI Designer Jr,10,10,10,2,Básico,CLT,4500.00,2025-09-10
+11,Analista de Dados Pl,11,1,11,1,Intermediário,CLT,6500.00,2025-09-11
+12,Cientista de Dados Sr,12,2,12,2,Avançado,CLT,12000.00,2025-09-12
+13,Engenheiro de Dados Pl,13,3,13,1,Intermediário,CLT,8000.00,2025-09-13
+14,Desenvolvedor Backend Sr,14,4,14,2,Avançado,CLT,10000.00,2025-09-14
+15,Desenvolvedor Frontend Jr,15,5,15,1,Básico,CLT,4000.00,2025-09-15
+16,Desenvolvedor Full Stack Pl,16,6,16,2,Intermediário,CLT,7500.00,2025-09-16
+17,Engenheiro de Software Sr,17,7,17,1,Avançado,CLT,12000.00,2025-09-17
+18,Administrador de Banco de Dados Pl,18,8,18,2,Intermediário,CLT,8500.00,2025-09-18
+19,DevOps Sr,19,9,19,1,Avançado,CLT,11000.00,2025-09-19
+20,UX/UI Designer Pl,20,10,20,2,Intermediário,CLT,7000.00,2025-09-20
+21,Analista de Dados Jr,21,1,21,1,Básico,CLT,3500.00,2025-09-21
+22,Cientista de Dados Pl,22,2,22,2,Intermediário,CLT,7000.00,2025-09-22
+23,Engenheiro de Dados Sr,23,3,23,1,Avançado,CLT,12000.00,2025-09-23
+24,Desenvolvedor Backend Jr,24,4,24,2,Básico,CLT,4000.00,2025-09-24
+25,Desenvolvedor Frontend Pl,25,5,1,1,Intermediário,CLT,6000.00,2025-09-25
+26,Desenvolvedor Full Stack Sr,26,6,2,2,Avançado,CLT,11000.00,2025-09-26
+27,Engenheiro de Software Pl,27,7,3,1,Intermediário,CLT,8000.00,2025-09-27
+28,Administrador de Banco de Dados Sr,28,8,4,2,Avançado,CLT,10000.00,2025-09-28
+29,DevOps Pl,29,9,5,1,Intermediário,CLT,9000.00,2025-09-29
+30,UX/UI Designer Jr,30,10,6,2,Básico,CLT,4500.00,2025-09-30
+31,Analista de Dados Pl,31,1,7,1,Intermediário,CLT,6500.00,2025-10-01
+32,Cientista de Dados Sr,32,2,8,2,Avançado,CLT,12000.00,2025-10-02
+33,Engenheiro de Dados Pl,33,3,9,1,Intermediário,CLT,8000.00,2025-10-03
+34,Desenvolvedor Backend Sr,34,4,10,2,Avançado,CLT,10000.00,2025-10-04
+35,Desenvolvedor Frontend Jr,35,5,11,1,Básico,CLT,4000.00,2025-10-05
+36,Desenvolvedor Full Stack Pl,36,6,12,2,Intermediário,CLT,7500.00,2025-10-06
+37,Engenheiro de Software Sr,37,7,13,1,Avançado,CLT,12000.00,2025-10-07
+38,Administrador de Banco de Dados Pl,38,8,14,2,Intermediário,CLT,8500.00,2025-10-08
+39,DevOps Sr,39,9,15,1,Avançado,CLT,11000.00,2025-10-09
+40,UX/UI Designer Pl,40,10,16,2,Intermediário,CLT,7000.00,2025-10-10
+41,Analista de Dados Jr,41,1,17,1,Básico,CLT,3500.00,2025-10-11
+42,Cientista de Dados Pl,42,2,18,2,Intermediário,CLT,7000.00,2025-10-12
+43,Engenheiro de Dados Sr,43,3,19,1,Avançado,CLT,12000.00,2025-10-13
+44,Desenvolvedor Backend Jr,44,4,20,2,Básico,CLT,4000.00,2025-10-14
+45,Desenvolvedor Frontend Pl,45,5,21,1,Intermediário,CLT,6000.00,2025-10-15
+46,Desenvolvedor Full Stack Sr,46,6,22,2,Avançado,CLT,11000.00,2025-10-16
+47,Engenheiro de Software Pl,47,7,23,1,Intermediário,CLT,8000.00,2025-10-17
+48,Administrador de Banco de Dados Sr,48,8,24,2,Avançado,CLT,10000.00,2025-10-18
+49,DevOps Pl,49,9,25,1,Intermediário,CLT,9000.00,2025-10-19
+50,UX/UI Designer Jr,50,10,1,2,Básico,CLT,4500.00,2025-10-20
+51,Analista de Dados Pl,1,1,2,1,Intermediário,CLT,6500.00,2025-10-21
+52,Cientista de Dados Sr,2,2,3,2,Avançado,CLT,12000.00,2025-10-22
+53,Engenheiro de Dados Pl,3,3,4,1,Intermediário,CLT,8000.00,2025-10-23
+54,Desenvolvedor Backend Sr,4,4,5,2,Avançado,CLT,10000.00,2025-10-24
+55,Desenvolvedor Frontend Jr,5,5,6,1,Básico,CLT,4000.00,2025-10-25
+56,Desenvolvedor Full Stack Pl,6,6,7,2,Intermediário,CLT,7500.00,2025-10-26
+57,Engenheiro de Software Sr,7,7,8,1,Avançado,CLT,12000.00,2025-10-15
+58,Analista de Dados Jr,3,1,5,1,Básico,CLT,3600.00,2025-10-21
+59,Cientista de Dados Pl,7,2,8,2,Intermediário,PJ,7500.00,2025-10-22
+60,Engenheiro de Dados Sr,12,3,12,1,Avançado,CLT,12500.00,2025-10-23
+61,Desenvolvedor Backend Pl,8,4,6,2,Intermediário,PJ,6800.00,2025-10-24
+62,Desenvolvedor Frontend Jr,15,5,10,1,Básico,Estágio,3500.00,2025-10-25
+63,Desenvolvedor Full Stack Pl,20,6,14,2,Intermediário,CLT,7800.00,2025-10-26
+64,Engenheiro de Software Sr,5,7,3,1,Avançado,PJ,11500.00,2025-10-27
+65,Administrador de Banco de Dados Pl,11,8,9,2,Intermediário,CLT,8800.00,2025-10-28
+66,DevOps Jr,13,9,7,1,Básico,CLT,4200.00,2025-10-29
+67,UX/UI Designer Pl,2,10,1,2,Intermediário,PJ,7000.00,2025-10-30
+68,Analista de Dados Pl,18,1,16,1,Intermediário,CLT,6700.00,2025-10-31
+69,Cientista de Dados Sr,4,2,19,2,Avançado,PJ,12300.00,2025-11-01
+70,Engenheiro de Dados Pl,6,3,11,1,Intermediário,CLT,8100.00,2025-11-02
+71,Desenvolvedor Backend Sr,9,4,15,2,Avançado,CLT,10200.00,2025-11-03
+72,Desenvolvedor Frontend Jr,1,5,13,1,Básico,Estágio,3600.00,2025-11-04
+73,Desenvolvedor Full Stack Pl,14,6,18,2,Intermediário,PJ,7700.00,2025-11-05
+74,Engenheiro de Software Sr,17,7,20,1,Avançado,CLT,11800.00,2025-11-06
+75,Administrador de Banco de Dados Pl,19,8,4,2,Intermediário,PJ,9000.00,2025-11-07
+76,DevOps Sr,16,9,2,1,Avançado,CLT,11000.00,2025-11-08
+77,UX/UI Designer Jr,10,10,5,2,Básico,Estágio,4300.00,2025-11-09

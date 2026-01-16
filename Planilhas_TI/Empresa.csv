@@ -1,0 +1,51 @@
+id_empresa,nome_empresa,setor,porte,localizacao
+1,CyberDynamics,TI,Médio,Campinas
+2,InfoByte,TI,Pequeno,São José dos Campos
+3,NextWave,TI,Grande,Santos
+4,SoftLabs,TI,Médio,Sorocaba
+5,DataLink,TI,Pequeno,Ribeirão Preto
+6,TechFusion,TI,Grande,São Bernardo do Campo
+7,QuantumCode,TI,Médio,São Caetano do Sul
+8,BlueSphere,TI,Pequeno,Barueri
+9,CloudBridge,TI,Grande,Jundiaí
+10,InnovaMind,TI,Médio,Osasco
+11,AlphaLabs,TI,Pequeno,Bauru
+12,SkySoft,TI,Grande,Piracicaba
+13,PixelBridge,TI,Médio,Niterói
+14,SoftCore,TI,Pequeno,Duque de Caxias
+15,NeoData,TI,Grande,Volta Redonda
+16,CodeSphere,TI,Médio,Contagem
+17,TechNovaPro,TI,Pequeno,Uberlândia
+18,DataMind,TI,Grande,Belo Horizonte
+19,CloudWorks,TI,Médio,Betim
+20,InnovaCode,TI,Pequeno,Ribeirão das Neves
+21,AlphaSoft,TI,Grande,Sete Lagoas
+22,CyberBridge,TI,Médio,Vila Velha
+23,SoftWave,TI,Pequeno,Cachoeiro de Itapemirim
+24,NextTech,TI,Grande,Serra
+25,InfoSphere,TI,Médio,Cariacica
+26,TechByte,TI,Pequeno,Campinas
+27,PixelNova,TI,Grande,São José dos Campos
+28,DataSphere,TI,Médio,Santos
+29,NeoCore,TI,Pequeno,Sorocaba
+30,CodeNova,TI,Grande,Ribeirão Preto
+31,CloudMind,TI,Médio,São Bernardo do Campo
+32,InnovaWave,TI,Pequeno,São Caetano do Sul
+33,SkyCore,TI,Grande,Barueri
+34,SoftMind,TI,Médio,Jundiaí
+35,TechBridgePro,TI,Pequeno,Osasco
+36,AlphaWave,TI,Grande,Bauru
+37,DataLabs,TI,Médio,Piracicaba
+38,BlueCore,TI,Pequeno,Campinas
+39,NextBridge,TI,Grande,Niterói
+40,CyberNova,TI,Médio,Duque de Caxias
+41,SoftDynamics,TI,Pequeno,Volta Redonda
+42,PixelLabs,TI,Grande,Niterói
+43,CloudByte,TI,Médio,Duque de Caxias
+44,InnovaSphere,TI,Pequeno,Volta Redonda
+45,NeoWave,TI,Grande,Niterói
+46,TechLabs,TI,Médio,Duque de Caxias
+47,DataBridge,TI,Pequeno,Belo Horizonte
+48,SkyNova,TI,Grande,Volta Redonda
+49,AlphaMind,TI,Médio,Niterói
+50,CodeBridge,TI,Pequeno,Duque de Caxias
