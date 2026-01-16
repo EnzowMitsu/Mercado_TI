@@ -79,7 +79,7 @@ FROM Vaga
 GROUP BY nivel_experiencia;
 ````
 
-*** 6 Verifica-se que a maior quantidades de vagas está concentrada em níveis intermediários, enquanto a menor quantidade de vagas está associada a níveis básicos, indicando maior demanda para profissionais com alguma experiência prévia. ***
+***6 Verifica-se que a maior quantidades de vagas está concentrada em níveis intermediários, enquanto a menor quantidade de vagas está associada a níveis básicos, indicando maior demanda para profissionais com alguma experiência prévia.***
 
 ***
 
@@ -93,7 +93,7 @@ FROM Vaga
 GROUP BY nivel_experiencia;
 ````
 
-*** 7 A média salarial cresce de acordo com o nível de experiência, com profissionais com níveis mais avançados apresentando remunerações superiores e uma maior média salarial. ***
+***7 A média salarial cresce de acordo com o nível de experiência, com profissionais com níveis mais avançados apresentando remunerações superiores e uma maior média salarial.***
 
 ***
 
@@ -107,7 +107,7 @@ FROM Empresa
 GROUP BY porte;
 ````
 
-*** 8 Podemos ver que a quantidade de empresas de porte médio e pequeno são iguais, com 17 empresas cada, enquanto as de grande porte, somam 16 registros. ***
+***8 Podemos ver que a quantidade de empresas de porte médio e pequeno são iguais, com 17 empresas cada, enquanto as de grande porte, somam 16 registros.***
 
 ***
 
@@ -120,7 +120,7 @@ SELECT CASE
 END AS "Tipo da modalidade", COUNT(*) AS "Quantidade"
 FROM Vaga GROUP BY id_modalidade
 ````
-*** 9 Observa-se que as modalidades presencial e remoto apresentam quase a mesma quantidade de vagas, indicando que as empresas continuam a adotar as duas modalidades de forma equilibrada. ***
+***9 Observa-se que as modalidades presencial e remoto apresentam quase a mesma quantidade de vagas, indicando que as empresas continuam a adotar as duas modalidades de forma equilibrada.***
 
 ***
 
@@ -136,7 +136,7 @@ ORDER BY "Quantidade" DESC
 LIMIT 3;
 ````
 
-*** 10 A habilidade mais requisitada no mercado de TI foi a linguagem Python, seguida por, SQL e Java, evidenciando uma demanda mais forte para as linguagens mais utilizadas no mercado atual. ***
+***10 A habilidade mais requisitada no mercado de TI foi a linguagem Python, seguida por, SQL e Java, evidenciando uma demanda mais forte para as linguagens mais utilizadas no mercado atual.***
 
 ***
 
@@ -150,7 +150,7 @@ JOIN vaga v ON e.id_empresa = v.id_empresa
 JOIN localizacao l ON l.id_localizacao = v.id_localizacao
 ````
 
-*** colocar fotos 19 ***
+***colocar fotos 19***
 
 ***
 
@@ -166,7 +166,7 @@ GROUP BY "Estado"
 ORDER BY "Quantidade" DESC;
 ````
 
-*** 11 O estado de São Paulo apresentam uma diferença significativa aos demais estados, sendo o estado com a maior quantidade de vagas, o que pode estar relacionado a grande densidade urbana e industrial e forte presença de empresas tecnológicas. ***
+***11 O estado de São Paulo apresentam uma diferença significativa aos demais estados, sendo o estado com a maior quantidade de vagas, o que pode estar relacionado a grande densidade urbana e industrial e forte presença de empresas tecnológicas.***
 
 ***
 
@@ -182,8 +182,8 @@ GROUP BY f.nome_funcao
 ORDER BY "Média salarial" DESC;
 ````
 
-*** 12 Observamos que as maiores médias salariais são para cargos de engenheiro de software e engenheiro de dados, ultrapassando uma média de R$ 10.000, seguido por Ciêntista de dados, administrador de BD e DevOPS, ultrapassando 
-R$ 9.000, indicando que áreas com maior complexidade técnicas apresentam salários mais elevados. ***
+***12 Observamos que as maiores médias salariais são para cargos de engenheiro de software e engenheiro de dados, ultrapassando uma média de R$ 10.000, seguido por Ciêntista de dados, administrador de BD e DevOPS, ultrapassando 
+R$ 9.000, indicando que áreas com maior complexidade técnicas apresentam salários mais elevados.***
 
 ***
 
@@ -199,7 +199,7 @@ GROUP BY l.estado
 ORDER BY "Média salarial" DESC;
 ````
 
-*** O estado do Espírito Santo apresenta a maior média salarial, com uma média de R$ 8.714. São Paulo, mesmo sendo o estado com a maior quantidade de vagas, também apresentam a menor média salarial entre os estados registrados, com uma média de R$ 7.828 ***
+***O estado do Espírito Santo apresenta a maior média salarial, com uma média de R$ 8.714. São Paulo, mesmo sendo o estado com a maior quantidade de vagas, também apresentam a menor média salarial entre os estados registrados, com uma média de R$ 7.828***
 
 ***
 
@@ -217,7 +217,7 @@ GROUP BY e.id_empresa
 HAVING COUNT(v.id_vaga) > 1;
 ````
 
-*** colocar a foto 14 aqui. ***
+***colocar a foto 14 aqui.***
 
 ***
 
@@ -237,7 +237,7 @@ GROUP BY 1,2,3
 ORDER BY "Empresa", "Modalidade" DESC;
 ````
 
-*** colocar fotos 15 aqui. ***
+***olocar fotos 15 aqui.***
 
 ***
 
@@ -256,7 +256,7 @@ GROUP BY 1,2
 ORDER BY "Função", COUNT(h.nome_habilidade) DESC;
 ````
 
-*** 17 Cargos para engenheiro de dados, engenheiro de software e cientistas de dados exigem uma quantidade maior de habilidades técnicas quando comparadas a outros cargos, que exigem uma menor quantidade de competências. ***
+***17 Cargos para engenheiro de dados, engenheiro de software e cientistas de dados exigem uma quantidade maior de habilidades técnicas quando comparadas a outros cargos, que exigem uma menor quantidade de competências.***
 
 ***
 
@@ -274,7 +274,7 @@ GROUP BY 1,2
 ORDER BY "Função", "Maior" DESC;
 ````
 
-*** 16 Podemos ver que nas empresas que oferecem cargos de engenheiro de dados, engenheiro de software e cientista de dados, apresentam uma remuneração maior. Isso confirma que cargos em que exigem uma quantidade maior de habilidades técnicas, possuem uma média salarial superior. ***
+***16 Podemos ver que nas empresas que oferecem cargos de engenheiro de dados, engenheiro de software e cientista de dados, apresentam uma remuneração maior. Isso confirma que cargos em que exigem uma quantidade maior de habilidades técnicas, possuem uma média salarial superior.***
 
 *** 
 
@@ -291,4 +291,4 @@ ORDER BY "Média" DESC
 LIMIT 5;
 ````
 
-*** colocar foto 18 ***
+***colocar foto 18***
