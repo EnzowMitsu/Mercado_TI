@@ -53,7 +53,8 @@ Vaga_por_cidade = COUNTROWS(Vaga)
   - Entre todas as vagas, podemos visualizar que São Paulo realmente concentra a maior parte das vagas.
 
 
+## 📉 Dashboard
 
-
+<img src = "../Power BI/Dashboard_PowerBi.png">
 
 
