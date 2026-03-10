@@ -6,11 +6,13 @@
 
 ````sql
 SELECT 
-    COUNT(*) AS "Total de vagas",
-    ROUND(AVG(salario),2) AS "Media dos salários" 
+	COUNT(*) AS "Total de vagas",
+	ROUND(AVG(salario),2) AS "Media dos salários" 
 FROM Vaga;
 ````
-***1 Entre 77 vagas disponíveis, o salário médio é de R$ 7.998,70.***
+***Entre as 100 vagas disponíveis, o salário médio é de R$ 7.739.***
+
+<img src="../images/1.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -25,7 +27,9 @@ ORDER BY salario DESC
 LIMIT 10;
 ````
 
-***3 O maior salário oferecido é para a vaga de engenheiro de dados Sênior, com salário de R$ 12.500.***
+***O maior salário oferecido é para a vaga de engenheiro de dados Sênior, com salário de R$ 13.400.***
+
+<img src="../images/3.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -37,7 +41,9 @@ SELECT
     MAX(salario) AS "Maior", MIN(salario) AS "Menor"
 FROM Vaga GROUP BY tipo_contrato;
 ````
-***2 A média salarial para CLT e PJ, é de aproximadamente R$ 8.000, enquanto para estágio possuem média significativamente menor, com cerca de R$ 3.800. O maior salário identificado pertence a uma vaga CLT, enquanto o menor salário está associado a vagas de estágio e CLT.***
+***A média salarial para CLT é de aproximadamente R$ 7.500 e para PJ aproximadamente R$ 11.500, enquanto para estágio possuem média significativamente menor, com cerca de R$ 3.000. O maior salário identificado pertence a uma vaga PJ, enquanto o menor salário está associado a vagas de estágio e CLT.***
+
+<img src="../images/2.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -50,7 +56,9 @@ FROM Vaga
 WHERE salario > 5000
 ````
 
-***4 entre 77 vagas, 60 vagas oferecem salários maiores que R$ 5.000, indicando que a maioria das oportunidades apresenta remuneração acima desse valor.***
+***entre 100 vagas, 72 vagas oferecem salários maiores que R$ 5.000, indicando que a maioria das oportunidades apresenta remuneração acima desse valor.***
+
+<img src="../images/4.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -65,7 +73,9 @@ WHERE tipo_contrato = 'CLT' OR tipo_contrato = 'PJ'
 GROUP BY tipo_contrato;
 ````
 
-***5 Foram identificadas que para vagas CLT, possuem 67, enquanto para vagas PJ, existem apenas 7, indicando que as empresas apresentam preferências por contratos no regime CLT.***
+***Foram identificadas que para vagas CLT, possuem 77, enquanto para vagas PJ, existem apenas 16, indicando que as empresas apresentam preferências por contratos no regime CLT.***
+
+<img src="../images/5.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -79,7 +89,10 @@ FROM Vaga
 GROUP BY nivel_experiencia;
 ````
 
-***6 Verifica-se que a maior quantidades de vagas está concentrada em níveis intermediários, enquanto a menor quantidade de vagas está associada a níveis básicos, indicando maior demanda para profissionais com alguma experiência prévia.***
+***Verifica-se que a maior quantidades de vagas está concentrada em níveis intermediários, enquanto a menor quantidade de vagas está associada a níveis básicos, indicando maior demanda para profissionais com alguma experiência prévia.***
+
+
+<img src="../images/6.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -93,7 +106,10 @@ FROM Vaga
 GROUP BY nivel_experiencia;
 ````
 
-***7 A média salarial cresce de acordo com o nível de experiência, com profissionais com níveis mais avançados apresentando remunerações superiores e uma maior média salarial.***
+***A média salarial cresce de acordo com o nível de experiência, com profissionais com níveis mais avançados apresentando remunerações superiores e uma maior média salarial.***
+
+
+<img src="../images/7.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -107,7 +123,10 @@ FROM Empresa
 GROUP BY porte;
 ````
 
-***8 Podemos ver que a quantidade de empresas de porte médio e pequeno são iguais, com 17 empresas cada, enquanto as de grande porte, somam 16 registros.***
+***Podemos ver que a quantidade de empresas de porte médio e pequeno são iguais, com 17 empresas cada, enquanto as de grande porte, somam 16 registros.***
+
+
+<img src="../images/8.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -120,7 +139,10 @@ SELECT CASE
 END AS "Tipo da modalidade", COUNT(*) AS "Quantidade"
 FROM Vaga GROUP BY id_modalidade
 ````
-***9 Observa-se que as modalidades presencial e remoto apresentam quase a mesma quantidade de vagas, indicando que as empresas continuam a adotar as duas modalidades de forma equilibrada.***
+***Observa-se que as modalidades remoto possui uma quantidade maior do que a presencial, indicando que as empresas estão adotando o trabalho remoto como estratégia de maior flexibilidade e eficiência.***
+
+
+<img src="../images/9.png" alt="Código SQL" width="400px"/>
 
 ***
 
@@ -136,25 +158,13 @@ ORDER BY "Quantidade" DESC
 LIMIT 3;
 ````
 
-***10 A habilidade mais requisitada no mercado de TI foi a linguagem Python, seguida por, SQL e Java, evidenciando uma demanda mais forte para as linguagens mais utilizadas no mercado atual.***
+***A habilidade mais requisitada no mercado de TI foi a linguagem SQL (desconsiderando Git), seguida por Python, AWS e Java, evidenciando uma demanda maior pelas tecnologias mais utilizadas atualmente.***
+
+<img src="../images/10.png" alt="Código SQL" width="400px"/>
 
 ***
 
-### 11. Em que estado cada empresa está localizada?
-
-````sql
-SELECT 
-	e.nome_empresa AS "Empresa", l.estado 
-FROM empresa e 
-JOIN vaga v ON e.id_empresa = v.id_empresa
-JOIN localizacao l ON l.id_localizacao = v.id_localizacao
-````
-
-***colocar fotos 19***
-
-***
-
-### 12. Quais as quantidades de vagas em cada estado brasileiro?
+### 11. Quais as quantidades de vagas em cada estado brasileiro?
 
 ````sql
 SELECT 
@@ -166,11 +176,13 @@ GROUP BY "Estado"
 ORDER BY "Quantidade" DESC;
 ````
 
-***11 O estado de São Paulo apresentam uma diferença significativa aos demais estados, sendo o estado com a maior quantidade de vagas, o que pode estar relacionado a grande densidade urbana e industrial e forte presença de empresas tecnológicas.***
+***Podemos observar que a maioria das empresas está localizada no estado de São Paulo, indicando uma concentração em regiões mais desenvolvidas e com maior potencial econômico.***
+
+<img src="../images/11.png" alt="Código SQL" width="400px"/>
 
 ***
 
-### 13. Quais as médias salariais de cada cargo?
+### 12. Quais as médias salariais de cada cargo?
 
 ````sql
 SELECT 
@@ -182,12 +194,13 @@ GROUP BY f.nome_funcao
 ORDER BY "Média salarial" DESC;
 ````
 
-***12 Observamos que as maiores médias salariais são para cargos de engenheiro de software e engenheiro de dados, ultrapassando uma média de R$ 10.000, seguido por Ciêntista de dados, administrador de BD e DevOPS, ultrapassando 
-R$ 9.000, indicando que áreas com maior complexidade técnicas apresentam salários mais elevados.***
+***Observamos que as maiores médias salariais são para cargos de engenheiro de software e engenheiro de dados, ultrapassando uma média de R$ 9100, seguido por administrador de BD e DevOPS, ultrapassando R$ 8.500, indicando que áreas com maior complexidade técnicas apresentam salários mais elevados.***
+
+<img src="../images/12.png" alt="Código SQL" width="400px"/>
 
 ***
 
-### 14. Quais as médias salariais para cada estado?
+### 13. Quais as médias salariais para cada estado?
 
 ````sql
 SELECT 
@@ -199,11 +212,13 @@ GROUP BY l.estado
 ORDER BY "Média salarial" DESC;
 ````
 
-***O estado do Espírito Santo apresenta a maior média salarial, com uma média de R$ 8.714. São Paulo, mesmo sendo o estado com a maior quantidade de vagas, também apresentam a menor média salarial entre os estados registrados, com uma média de R$ 7.828***
+***O estado do Rio de Janeiro apresenta a maior média salarial, com uma média de R$ 8.662,50. São Paulo, mesmo sendo o estado com a maior quantidade de vagas, também apresentam a menor média salarial entre os estados registrados, com uma média de R$ 7.298,31***
+
+<img src="../images/13.png" alt="Código SQL" width="400px"/>
 
 ***
 
-### 15. Qual o maior e menor salário de cada empresa?
+### 14. Qual o maior e menor salário de cada empresa?
 #### Para evitar redundância, nesta query, foi utilizado a cláusula HAVING, para apenas filtrar empresas que possuem mais de 1 vaga.
 
 ````sql
@@ -217,68 +232,11 @@ GROUP BY e.id_empresa
 HAVING COUNT(v.id_vaga) > 1;
 ````
 
-***colocar a foto 14 aqui.***
+<img src="../images/14.png" alt="Código SQL" width="400px"/>
 
 ***
 
-### 16. Qual a média de salário por função e modalidade?
-
-````sql
-SELECT 
-	e.nome_empresa AS "Empresa",
-	m.nome_modalidade AS "Modalidade",
-	f.nome_funcao AS "Função",
-	ROUND(AVG(v.salario),2) AS "Media de salário"
-FROM Vaga v 
-JOIN Empresa e ON v.id_empresa = e.id_empresa
-JOIN Modalidade m ON v.id_modalidade = m.id_modalidade
-JOIN Funcao f ON v.id_funcao = f.id_funcao
-GROUP BY 1,2,3 
-ORDER BY "Empresa", "Modalidade" DESC;
-````
-
-***olocar fotos 15 aqui.***
-
-***
-
-### 17. Quais as habilidades mais requisitadas por função?
-
-````sql
-SELECT 
-	f.nome_funcao AS "Função",
-	h.nome_habilidade AS "Habilidade",
-	COUNT (h.nome_habilidade) AS "Quantidade de empresas que pedem"
-FROM Vaga v 
-JOIN Funcao f ON v.id_funcao = f.id_funcao
-JOIN Vaga_Habilidade vh ON v.id_vaga = vh.id_vaga
-JOIN Habilidade h ON vh.id_habilidade = h.id_habilidade
-GROUP BY 1,2 
-ORDER BY "Função", COUNT(h.nome_habilidade) DESC;
-````
-
-***17 Cargos para engenheiro de dados, engenheiro de software e cientistas de dados exigem uma quantidade maior de habilidades técnicas quando comparadas a outros cargos, que exigem uma menor quantidade de competências.***
-
-***
-
-### 18. Qual o maior salário por função dentro de cada empresa.
-
-````sql
-SELECT 
-	e.nome_empresa AS "Empresa",
-	f.nome_funcao AS "Função",
-	MAX(v.salario) AS "Maior"
-FROM Vaga v 
-JOIN Empresa e ON v.id_empresa = e.id_empresa
-JOIN Funcao f ON v.id_funcao = f.id_funcao
-GROUP BY 1,2 
-ORDER BY "Função", "Maior" DESC;
-````
-
-***16 Podemos ver que nas empresas que oferecem cargos de engenheiro de dados, engenheiro de software e cientista de dados, apresentam uma remuneração maior. Isso confirma que cargos em que exigem uma quantidade maior de habilidades técnicas, possuem uma média salarial superior.***
-
-*** 
-
-### 19. Quais as empresas que apresentam os maiores salários?
+### 15. Quais as empresas que apresentam os maiores salários?
 
 ````sql
 SELECT 
@@ -291,4 +249,4 @@ ORDER BY "Média" DESC
 LIMIT 5;
 ````
 
-***colocar foto 18***
+<img src="../images/15.png" alt="Código SQL" width="400px"/>
