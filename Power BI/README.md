@@ -2,7 +2,7 @@
  Este dashboard foi desenvolvido para analisar o mercado de trabalho na área de TI no Brasil. 
  Ele permite visualizar salários, quantidade de vagas, habilidades mais requisitadas, distribuição geográfica e modalidade de trabalho
 
- <img src="Power BI/dashboard.png" alt="Dashboard" width="800px"/>
+ <img src="../Power BI/dashboard.png" alt="Dashboard" width="800px"/>
 
 ### 📊 KPIs principais
 - Maior salário
