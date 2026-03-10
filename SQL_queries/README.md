@@ -155,7 +155,7 @@ FROM Vaga_Habilidade vh
 	JOIN Habilidade h ON vh.id_habilidade = h.id_habilidade
 GROUP BY h.id_habilidade 
 ORDER BY "Quantidade" DESC 
-LIMIT 3;
+LIMIT 5;
 ````
 
 ***A habilidade mais requisitada no mercado de TI foi a linguagem SQL (desconsiderando Git), seguida por Python, AWS e Java, evidenciando uma demanda maior pelas tecnologias mais utilizadas atualmente.***
