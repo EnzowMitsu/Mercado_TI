@@ -37,7 +37,8 @@ SELECT
 	nivel_experiencia AS "Nível de experiencia", 
 	COUNT(*) AS "Quantidade" 
 FROM Vaga 
-GROUP BY nivel_experiencia;
+GROUP BY nivel_experiencia
+ORDER BY "Quantidade" DESC;
 
 -- Retorna a média salarial por nível de experiência
 SELECT 
