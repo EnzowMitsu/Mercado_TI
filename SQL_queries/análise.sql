@@ -63,14 +63,14 @@ FROM Vaga
 GROUP BY id_modalidade
 
 
--- Retorna as 3 habilidades mais requisitadas
+-- Retorna as 5 habilidades mais requisitadas
 SELECT 
 	h.nome_habilidade AS "Habilidade", COUNT(*) AS "Quantidade"
 FROM Vaga_Habilidade vh 
 	JOIN Habilidade h ON vh.id_habilidade = h.id_habilidade
 GROUP BY h.id_habilidade 
 ORDER BY "Quantidade" DESC 
-LIMIT 3;
+LIMIT 5;
 
 -- Retorna a quantidade de vagas por estado
 SELECT 
