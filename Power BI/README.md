@@ -4,6 +4,8 @@
 
  <img src="../Power BI/dashboard.png" alt="Dashboard" width="800px"/>
 
+  <img src="../Power BI/relacoes.png" alt="Relacao" width="800px"/>
+
 ### 📊 KPIs principais
 - Maior salário
 - Menor salário
